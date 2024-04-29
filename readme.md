@@ -1,4 +1,4 @@
-# Saavn
+# Music4sleeping
 
  <p>Playing high quality songs, over your web browser, ad-free experience, High-Quality Music upto 320kbps</p>
  
@@ -6,13 +6,9 @@
 
 ## Live Preview
 Preview is available at the links below : <br>
-[saavn-web-ui.vercel.app](https://saavn-web-ui.vercel.app/)<br>
-[saavn.codeforkers.tk](https://saavn.codeforkers.tk)
+[music4sleeping.vercel.app](https://music4sleeping.vercel.app/)<br>
+[classicalmusicforsleeping.com](https://classicalmusicforsleeping.com)
 
-## Details
-> Status : `In Development`<br>
-Version : `v3.0` <br>
-Developers: `@wiz64`
 ## Features
 - ⭕ All basic features of a music player
 - :green_apple: Download MP3 Songs with metadata
@@ -22,15 +18,11 @@ Developers: `@wiz64`
 - 🎵 Large Library of Songs, Fetched Directly
   
 ## Upcoming Features
-- Playlists
 - Song Sharing
-- Lyrics
   
 ## Installation / Usage
-
 Files are completely static, and can be served directly to the browser. No installation is required, Just open the page on a browser and you're ready to rock.
 Downloader API is available at [wiz64/saadhna-mp3-server](https://github.com/wiz64/saadhna-mp3-server)
-
 <br>
 
 ## Deployment
@@ -40,12 +32,10 @@ This can be deployed to any Web Hosting Service, Platforms like Vercel, Heroku, 
 
 <br>
 
-## Copyright & Credits
-> Developed by [@wiz64](https://github.com/wiz64) featuring API made by [@sumitkolhe](https://github/sumitkolhe) .
-
 XDA - Off Topic Group
 
 This code was licensed under MIT License. View [LICENSE FILE](./LICENSE)
 > &copy;  Copyright 2022 @wiz64
+> &copy;  Copyright 2024 @crouchbeat
 
 I am not responsible for any Third-Party Copyright Material, We do not host any copyrighted material on our servers or accounts.

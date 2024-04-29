@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-Developer : wiz64 ,
-Contribute: https://github.com/wiz64/saavn-web-ui ,
-Don't forget to star the repo
--->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Saavn Music Player</title>
-    <meta name="description" content="Saavn Music Player is an Ad-Free Music Player, High Quality MP3 Songs with Metadata support, and a Modern Design. A large library of songs. developed by wiz64">
+    <title>Classical Music for Sleeping</title>
+    <meta name="description" content=" Classical music for sleeping. Relaxing music for sleeping. ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
@@ -19,20 +14,21 @@ Don't forget to star the repo
 <body style="padding-bottom: 50px;background: rgb(0,0,0);">
     <header class="header-dark" style="color: rgb(205,205,205);padding: 0px 0px 10px;">
         <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
-            <div class="container"><a class="navbar-brand" href="#">Saavn</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="https://www.classicalmusicforsleeping.com/">ClassicalMusicForSleeping.com</a>
+        <!--    <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="btn btn-primary" role="button" href="https://github.com/wiz64/saavn-web-ui" target="_blank">Github</a></li>
+                        <li class="nav-item"></li>
                     </ul>
-                </div>
+                </div>  --> 
             </div>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <h1 class="text-center" style="margin: 0px;">Saavn</h1>
-                    <h3 class="text-center" style="color: rgba(249,255,255,0.81);font-family: Bitter, serif;">Music Player &amp; Downloader</h3>
-                    <p class="text-center" style="padding: 0px 5px;">Ad-Free, Metadata, &amp; Modern Design</p>
+                    <h1 class="text-center" style="margin: 0px;">Classical Music for Sleeping</h1> 
+                <!--      <h3 class="text-center" style="color: rgba(249,255,255,0.81);font-family: Bitter, serif;">Find Your Peace</h3>
+                   <p class="text-center" style="padding: 0px 5px;">Ad-Free, Metadata, &amp; Modern Design</p>   --> 
                 </div>
             </div>
         </div>
@@ -54,7 +50,7 @@ Don't forget to star the repo
                         <div class="intro">
                             <form class="text-center" action="#" method="get">
                                 <div style="width: 95%;margin: auto;padding: 3px;" placeholder="Enter Song, Artist or Album name"><input class="form-control float-left fit-content" type="text" id="saavn-search-box" style="margin: 0px;color: var(--gray-dark);max-width: 100%;width: 75%;" placeholder="Enter Name, Year, Artist"><button class="btn btn-primary" id="saavn-search-trigger" type="submit" style="text-align: center;" onclick="SaavnSearch()">Search</button></div>
-                                <h5 class="text-uppercase text-center" style="color: rgb(165,255,184);">Results</h5>
+                            <!--   <h5 class="text-uppercase text-center" style="color: rgb(165,255,184);">Results</h5> --> 
                             </form>
                         </div>
                             <div id="saavn-results" style="margin-bottom: 20px;">
@@ -64,7 +60,7 @@ Don't forget to star the repo
                             <div class="button-container">
                             </div>
                             <script>
-                                const buttonTitles = ['2023','English Songs','Edward Maya','Zack Knight','Akcent','Arijit Singh','Enrique Iglesias','Pitbull','Imran Khan', 'DJ Snake', 'Darshan Raval', 'Jubin Nautiyal', 'Armaan Malik', 'Old Songs',"Adele","Billie Eilish","Imagine Dragons","Ed Sheeran","Neha Kakkar", "Badshah", "Atif Aslam", "Guru Randhawa", "Shreya Ghoshal", "Tony Kakkar", "Harrdy Sandhu", "Armaan Malik", "Diljit Dosanjh", "Sonu Nigam", "Vishal Dadlani", "Kanika Kapoor", "Sukhwinder Singh", "Sunidhi Chauhan", "Mika Singh", "Shaan", "Mohit Chauhan", "Pritam", "KK", "Yo Yo Honey Singh","Taylor Swift","Sia","Radioactive","Halsey","The Chainsmokers","Drake","Justin Bieber","Beyonce","The Weeknd","Rihanna","Lady Gaga","AC/DC","Michael Jackson","The Rolling Stones"];
+                                const buttonTitles = ["Classical Music for Sleeping","Relaxing music","music for sleep","Gymnopedie","Schubert","Wiegendlied","Gundula Janowitz", "Goldberg Variations", "Mahler symphony","Debussy reverie","Debussy clair de lune", "Pavane pour une unfante defunte","Shostakovich piano concerto","Bach Goldberg variations aria","Debussy arabesque","Bach prelude in b minor","Rachmaninov","Satie gnossiennes","Holst the planets","Saint saens le cygne","Chopin 24 preludes","Handel Suite in b flat major menuet","Debussy images book 1","Debussy preludes book 1", "Voiles Sibelius 6 impromptus","Gaspard de la nuit II. Le gibet","Vaughan Williams symphony","Schumann traumerei","Brahms op118 ii","Debussy estampes 1","Chopin nocturne in C sharp minor","Chopin nocturne in c minor","Grieg piano concerto","Chopin raindrop prelude","Chopin piano concerto","Chopin nocturne in f minor","Chopin preludes op 28","Chopin nocturne","Gabriel Faure pavane","Satie’s other gymnopedies","Arvo part spiegel im spiegel","Messiaen - Regard du Père","Gorecki symphony","Górecki - Miserere","Sheep may safely graze","Saint Saens"];
                                 const buttonContainer = document.querySelector('.button-container');
 
                                 buttonTitles.forEach(title => {
@@ -79,8 +75,6 @@ Don't forget to star the repo
                         <p class="footer" align="center">
                             This content is not affiliated with, endorsed, sponsored, or specifically approved by any third party music provider like Gaana, Saavn, Spotfy, and is not responsible for any copyright material.<br>
                             We don't serve any music on our servers.<br><br>
-                            Originally by wiz64.<br>
-                            Re-Designed by gaganmalvi
                         </p>
                         <div style="padding-bottom: 40px;">
 
