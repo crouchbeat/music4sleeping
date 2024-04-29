@@ -1,6 +1,7 @@
 var results_container = document.querySelector("#saavn-results")
 var results_objects = {};
-const searchUrl = "https://jiosaavn-api-privatecvc2.vercel.app/search/songs?query=";
+//const searchUrl = "https://jiosaavn-api-privatecvc2.vercel.app/search/songs?query=";
+const searchUrl = "https://api.classicalmusicforsleeping.com/api/search/songs?query=";
 function SaavnSearch() {
 event.preventDefault(); // stop page changing to #, which will reload the page
 var query = document.querySelector("#saavn-search-box").value.trim()
@@ -66,12 +67,12 @@ if (play_time.startsWith("00:")) {
 }
 var song_id = track.id;
 var year = track.year;
-var song_image = track.image[1].link;
-var song_artist = TextAbstract(track.primaryArtists,30);
+var song_image = track.image[1].url;
+var song_artist = TextAbstract(track.artists.primary[0].name,30);
 var bitrate = document.getElementById('saavn-bitrate');
 var bitrate_i = bitrate.options[bitrate.selectedIndex].value;
 if(track.downloadUrl) {
-var download_url = track.downloadUrl[bitrate_i]['link'];
+var download_url = track.downloadUrl[bitrate_i]['url'];
 var quality = "";
 if (bitrate_i == 4) {quality = 320} else {quality = 160;}
     // push object to results array
@@ -110,6 +111,7 @@ function TextAbstract(text, length) {
     if (text == null) {
         return "";
     }
+    text = String(text); // Convert text to string to avoid errors
     if (text.length <= length) {
         return text;
     }
