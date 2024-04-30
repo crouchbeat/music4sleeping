@@ -24,6 +24,14 @@ if (promise) {
     promise.catch(function(error) { console.error(error); });
 }//call this to just preload the audio without playing
   audio.play(); //call this to play the song right away
+  audio.onended = function() {
+      // Logic to find and play the next song
+      var nextSongId = findNextSongId(song_id);
+      if (nextSongId) {
+          var nextSongUrl = results_objects[nextSongId].track.downloadUrl[bitrate_i]['url'];
+          PlayAudio(nextSongUrl, nextSongId);
+      }
+  };
 };
 function searchSong(search_term) {
     
@@ -129,3 +137,14 @@ function AddDownload(id) {
                   }}
               });}, 3000); // end interval
         } });}
+        
+function findNextSongId(currentSongId) {
+    // Assuming results_objects is an array of song objects
+    var keys = Object.keys(results_objects);
+    var currentIndex = keys.indexOf(currentSongId);
+    var nextIndex = currentIndex + 1;
+    if (nextIndex < keys.length) {
+        return keys[nextIndex];
+    }
+    return null; // No next song
+}
